@@ -6,5 +6,24 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'data-binding-property';
+  title = 'Data-Binding-Property with Disable & Enable Button';
+
+  no: number = 0;
+  enabled: boolean = true;
+
+  constructor() {
+
+    setInterval(() => {
+      this.no++;
+
+      
+      this.enabled = !this.enabled
+    }, 1000)
+
+
+  }
+
+
+
+
 }
